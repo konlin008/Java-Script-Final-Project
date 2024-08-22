@@ -17,38 +17,78 @@ body {
   z-index: 9999;
   padding: 10vw 7vw;
 }
-#main {
-  position: relative;
-}
-.page_1 {
-  height: 100vh;
-  width: 100%;
-  background-color: #0b0b0b;
-}
+
 .txt {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.txt-count {
+  display: flex;
   gap: 1vw;
+  margin-right: 5vw;
 }
-.txt h5,
+.txt-count h5,
 h6 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-family: "Silk Serif";
+  font-weight: 500;
 }
-.txt h5{
-  padding-left: 3vw;
-}
-.txt h6{
-  padding-right: 3vw;
+.txt-count h5 {
+  text-align: end;
+  width: 7vw;
 }
 .txt h1 {
   font-family: "Plain";
   font-size: 7vw;
   text-transform: uppercase;
   font-weight: 500;
+  line-height: 7.5vw;
 }
 .txt h2 {
   font-family: "Plain";
   font-size: 7vw;
   text-transform: uppercase;
+  font-weight: 500;
+  animation-name: anime;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  line-height: 9vw;
+  height: 9vw;
+
+}
+
+@keyframes anime {
+  0% {
+    font-family: "Plain";
+    -webkit-text-stroke: 0.5px #fff;
+    color: #fff;
+  }
+  47% {
+    font-family: "Plain";
+    -webkit-text-stroke: 0.5px #fff;
+    color: #fff;
+  }
+  50% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
+  }
+  
+  100% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
+  }
+}
+
+#main {
+  position: relative;
+  background-color: #000;
+}
+.page_1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #0c0c0c;
 }
