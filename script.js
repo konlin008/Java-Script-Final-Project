@@ -35,7 +35,7 @@ function loadingAnimation() {
   tl.from(".nav", {
     opacity: 0,
   });
-  tl.from(".hero h1", {
+  tl.from(".hero h1, .hero h2", {
     y: 150,
     stagger: 0.25,
     opacity: 0,
@@ -55,3 +55,4 @@ function customCrsr() {
   Shery.makeMagnet(".nav_part_2 h4", {});
 }
 customCrsr();
+

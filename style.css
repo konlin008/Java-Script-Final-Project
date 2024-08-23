@@ -10,18 +10,18 @@ body {
   width: 100%;
   background-color: #000;
 }
-body {
-  overflow: hidden;
+body{
+  overflow: unset;
 }
 .crsr {
   position: absolute;
   height: 2vw;
   width: 2vw;
-  z-index: 99999;
+  z-index: 1;
   border: 1px solid #ffffff8a;
   border-radius: 50%;
   mix-blend-mode: difference;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 #loader {
   height: 100%;
@@ -125,15 +125,76 @@ h6 {
 .site_info {
   padding: 5.5vw 27vw;
 }
-.hero{
+.hero {
   height: fit-content;
   width: fit-content;
   overflow: hidden;
 }
-.hero h1 {
+.hero h1,
+h2 {
   font-family: "Plain";
   text-transform: uppercase;
   font-size: 7.2vw;
   line-height: 7.5vw;
   font-weight: 500;
 }
+.hero_3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 999;
+}
+.hero_3 h1 {
+  border-bottom: 0.5vw solid #fff;
+  margin-right: 2vw;
+  padding: 0.5vw 0;
+}
+.hero_3 h1:hover {
+  border-bottom: none;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+.page_2{
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+  padding: 8vw 30vw;
+  position: relative;
+  
+}
+.page_2 .container{
+  height:71vh;
+  width: 69vw;
+  position: relative ;
+}
+.paly_button{
+  height: 8.5vw;
+  width: 8.5vw;
+  background-color: #FFA63D;
+  position: absolute;
+  z-index: 8;
+  border-radius: 50%;
+  margin-top: -5%;
+  left: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paly_button i{
+  font-size: 1.6vw;
+}
+.container img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.container video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
