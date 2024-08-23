@@ -8,6 +8,20 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #000;
+}
+body {
+  overflow: hidden;
+}
+.crsr {
+  position: absolute;
+  height: 2vw;
+  width: 2vw;
+  z-index: 99999;
+  border: 1px solid #ffffff8a;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transform: translate(-50%,-50%);
 }
 #loader {
   height: 100%;
@@ -56,7 +70,6 @@ h6 {
   animation-iteration-count: infinite;
   line-height: 9vw;
   height: 9vw;
-
 }
 
 @keyframes anime {
@@ -75,7 +88,7 @@ h6 {
     -webkit-text-stroke: 0.5px #fff;
     color: transparent;
   }
-  
+
   100% {
     font-family: "Silk Serif";
     -webkit-text-stroke: 0.5px #fff;
@@ -90,5 +103,37 @@ h6 {
 .page_1 {
   height: 100vh;
   width: 100%;
-  background-color: #0c0c0c;
+  background-color: #151515;
+}
+.nav {
+  padding: 2.5vw 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_part_2 {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.nav_part_2 h4 {
+  font-family: "Plain";
+  text-transform: capitalize;
+  font-size: 0.9vw;
+  font-weight: 300;
+}
+.site_info {
+  padding: 5.5vw 27vw;
+}
+.hero{
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+.hero h1 {
+  font-family: "Plain";
+  text-transform: uppercase;
+  font-size: 7.2vw;
+  line-height: 7.5vw;
+  font-weight: 500;
 }
