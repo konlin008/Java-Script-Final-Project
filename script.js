@@ -46,13 +46,25 @@ function loadingAnimation() {
 }
 loadingAnimation();
 function customCrsr() {
-  document.addEventListener("mousemove", function (dets) {
+  document.addEventListener("mousemove", function(dets){
+    let scrollY = window.scrollY; 
     gsap.to(".crsr", {
-      left: dets.x,
-      top: dets.y,
+        top: dets.y + scrollY,  
+        left: dets.x,
+        duration: 0.5
     });
-  });
-  Shery.makeMagnet(".nav_part_2 h4", {});
+
+});
+Shery.makeMagnet(".nav_part_2 h4", {});
 }
 customCrsr();
 
+
+// function cursorAnimation() {
+//   Shery.mouseFollower({
+//     skew: true,
+//     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+//     duration: 0.5,
+//   });
+// }
+// cursorAnimation()
