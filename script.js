@@ -24,7 +24,6 @@ function loadingAnimation() {
     delay: 3.5,
     duration: 0.5,
   });
-
   tl.from(".page_1", {
     delay: 0.2,
     y: 1600,

@@ -145,8 +145,6 @@ h6 {
   line-height: 8.5vw;
   font-weight: 500;
   position: relative;
-
-  
 }
 .hero_3 h1:hover {
   -webkit-text-stroke: 1px #fff;
@@ -190,20 +188,20 @@ h6 {
   width: 100%;
   object-fit: cover;
 }
-.page_3{
+.page_3 {
   min-height: 100vh;
   width: 100%;
   background-color: #462121;
   position: relative;
 }
-.page_4{
+.page_4 {
   min-height: 100vh;
   width: 100%;
   background-color: #151515;
   position: relative;
   padding: 5vh 0;
 }
-.brand_about{
+.brand_about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -211,64 +209,173 @@ h6 {
   position: relative;
   width: 72vw;
   margin-left: 28vw;
-  padding-right: 5vw;
 }
-.brand_about h1{
+.brand_about h1 {
   font-size: 7.5vw;
   text-transform: uppercase;
   font-weight: 500;
 }
-.brand_about .underline{
-  width: 100%;
-  height: 0.1vw;
-  background-color: #fff;
-  margin: 10vh 0;
-}
-.brand_about>p{
+
+.brand_about > p {
   font-size: 2vw;
   width: 32vw;
 }
-.brand_about .extend{
+.brand_about .extend {
   width: 100%;
   display: flex;
   margin-top: 2vw;
   gap: 1vw;
 }
-.extend img{
+.extend img {
   width: 34vw;
 }
-.extend p{
+.extend p {
   width: 20%;
   font-size: 0.8vw;
 }
-.about_awards{
-background-color: #3F7DF4;
-width: 34vw;
-height: 68vh;
-padding:5vh 3vw;
-position: relative;
-bottom: 10vh;
-right: -23vw;
+.about_awards {
+  background-color: #3f7df4;
+  width: 34vw;
+  height: 68vh;
+  padding: 5vh 3vw;
+  position: relative;
+  bottom: 10vh;
+  right: -23vw;
 }
-.award{
+.award {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
   padding: 3.5vh 0;
 }
-.award h4{
- font-size: 1.5vw;
- font-weight: 500;
+.award h4 {
+  font-size: 1.5vw;
+  font-weight: 500;
 }
-.award p{
-  font-size: .85vw;
+.award p {
+  font-size: 0.85vw;
   font-weight: 500;
   width: 40%;
 }
-.brand_about .underline_2{
+.brand_about>h5{
+  font-family: "Plain";
+  font-size: 0.8vw;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.page_5 {
+  min-height: 100vh;
   width: 100%;
+  background-color: #151515;
+  position: relative;
+  padding: 10vh 0;
+  font-family: "Plain";
+}
+.page_5 .elm {
+  white-space: nowrap;
+  margin-bottom: -3vw;
+}
+.page_5 .elm2 {
+  white-space: nowrap;
+  margin-bottom: -3vw;
+}
+.page_5 .elm h1 {
+  font-size: 7.5vw;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 16px;
+  animation-name: page_5_anime;
+  animation-duration: 16s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.page_5 .elm2 h1 {
+  font-size: 7.5vw;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 21px;
+  transform: translateX(-100%);
+  animation-name: page_5_anime;
+  animation-duration: 16s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.page_5 .elm h1 span {
+  font-family: "Silk Serif";
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+}
+.page_5 .elm2 h1 span {
+  font-family: "Silk Serif";
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+}
+@keyframes page_5_anime {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-100% - 25px));
+  }
+}
+.footer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #151515;
+  position: relative;
+  padding: 5vh 0;
+  padding-left: 25%;
+}
+.footer h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Plain";
+}
+.footer h1 i {
+  font-size: 8vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Plain";
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+.underline {
+  width: 90%;
   height: 0.1vw;
   background-color: #fff;
-  margin: 10vh 3vh 0;
+  margin: 10vh 0;
+}
+.contact_info {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 18vw;
+  padding-right: 10%;
+}
+.contact_info h6 {
+  font-size: 0.8vw;
+  font-weight: 500;
+  font-family: "Plain";
+  margin-bottom: 2.5vh;
+}
+.contact_info h5 {
+  width: 80%;
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "Plain";
+}
+.footer>h5{
+  font-family: "Plain";
+  font-size: 0.8vw;
+  font-weight: 500;
+  text-transform: capitalize;
 }
