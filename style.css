@@ -129,13 +129,23 @@ h6 {
 }
 .site_info {
   padding: 5.5vw 27vw;
+  position: relative;
 }
 .hero {
   height: fit-content;
   width: fit-content;
-  overflow: hidden;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.hero_1 ::before{
+  content: "01";
+  font-size: 3.3vw;
+  font-weight: 400;
+  position: absolute;
+  font-family: "Silk Serif";
+  left:-18% ;
+  top: -10%;
 }
 .hero h1,
 .hero h2 {
@@ -214,8 +224,17 @@ h6 {
   font-size: 7.5vw;
   text-transform: uppercase;
   font-weight: 500;
+  position: relative;
 }
-
+.brand_about h1::before{
+  content: "03";
+  font-size: 3.3vw;
+  font-weight: 400;
+  position: absolute;
+  font-family: "Silk Serif";
+  left:-15% ;
+  top: 10%;
+}
 .brand_about > p {
   font-size: 2vw;
   width: 32vw;
@@ -339,6 +358,16 @@ h6 {
   font-weight: 500;
   text-transform: uppercase;
   font-family: "Plain";
+  position: relative;
+}
+.footer h1::before{
+  content: "04";
+  font-size: 3.3vw;
+  font-weight: 400;
+  position: absolute;
+  font-family: "Silk Serif";
+  left:-12% ;
+  top: 10%;
 }
 .footer h1 i {
   font-size: 8vw;
