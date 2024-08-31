@@ -138,13 +138,13 @@ h6 {
   align-items: center;
   position: relative;
 }
-.hero_1 ::before{
+.hero_1 ::before {
   content: "01";
   font-size: 3.3vw;
   font-weight: 400;
   position: absolute;
   font-family: "Silk Serif";
-  left:-18% ;
+  left: -18%;
   top: -10%;
 }
 .hero h1,
@@ -201,8 +201,75 @@ h6 {
 .page_3 {
   min-height: 100vh;
   width: 100%;
-  background-color: #462121;
+  background-color: #111010;
   position: relative;
+  padding: 5vh 0;
+}
+.page_3 h1 {
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  font-family: "Plain";
+  text-transform: uppercase;
+}
+.page_3_header_div {
+  height: fit-content;
+  width: 72%;
+  margin-left: 28vw;
+}
+.page_3 h1::before {
+  content: "03";
+  font-size: 3.3vw;
+  font-weight: 400;
+  position: absolute;
+  font-family: "Silk Serif";
+  left: -10%;
+  top: 10%;
+}
+#iamge_div_container{
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  flex-wrap: wrap;
+}
+.image_div{
+  flex-shrink: 0;
+  height: 60vh;
+  width: 20vw;
+  background-color: #3f7df4;
+  position: relative;
+}
+.image_div img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  
+}
+.show_case h2{
+  font-size: 2vw;
+  font-family: "Plain";
+  font-weight: 400;
+  padding: 2.5vw 0;
+}
+.title_div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2vw 0;
+  border-bottom: 1px solid #fff;
+}
+.title_div h4,h3{
+  font-size: 0.8vw;
+  font-family: "Plain";
+  font-weight: 400;
+}
+.title_div h4{
+  width: 60%;
 }
 .page_4 {
   min-height: 100vh;
@@ -223,16 +290,16 @@ h6 {
 .brand_about h1 {
   font-size: 7.5vw;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
 }
-.brand_about h1::before{
+.brand_about h1::before {
   content: "03";
   font-size: 3.3vw;
   font-weight: 400;
   position: absolute;
   font-family: "Silk Serif";
-  left:-15% ;
+  left: -15%;
   top: 10%;
 }
 .brand_about > p {
@@ -277,7 +344,7 @@ h6 {
   font-weight: 500;
   width: 40%;
 }
-.brand_about>h5{
+.brand_about > h5 {
   font-family: "Plain";
   font-size: 0.8vw;
   font-weight: 500;
@@ -360,13 +427,13 @@ h6 {
   font-family: "Plain";
   position: relative;
 }
-.footer h1::before{
+.footer h1::before {
   content: "04";
   font-size: 3.3vw;
   font-weight: 400;
   position: absolute;
   font-family: "Silk Serif";
-  left:-12% ;
+  left: -12%;
   top: 10%;
 }
 .footer h1 i {
@@ -402,9 +469,12 @@ h6 {
   font-weight: 500;
   font-family: "Plain";
 }
-.footer>h5{
+.footer > h5 {
   font-family: "Plain";
   font-size: 0.8vw;
   font-weight: 500;
   text-transform: capitalize;
+}
+._canvas_container{
+  z-index: 9999999 !important;
 }
