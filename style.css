@@ -201,9 +201,9 @@ h6 {
 .page_3 {
   min-height: 100vh;
   width: 100%;
-  background-color: #111010;
+  background-color: #151515;
   position: relative;
-  padding: 5vh 0;
+  padding: 3vw 2.5vw;
 }
 .page_3 h1 {
   font-size: 7.5vw;
@@ -227,49 +227,130 @@ h6 {
   left: -10%;
   top: 10%;
 }
-#iamge_div_container{
+#iamge_div_container {
   width: 100%;
   min-height: 70vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5vw;
   padding: 0 2vw;
   flex-wrap: wrap;
+  position: relative;
 }
-.image_div{
+.image_div {
   flex-shrink: 0;
   height: 60vh;
   width: 20vw;
   background-color: #3f7df4;
   position: relative;
 }
-.image_div img{
+.max_img_div {
+  height: 90vh;
+  width: 30vw;
+}
+.image_div img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: absolute;
-  
+  top: 0;
+  left: 0;
 }
-.show_case h2{
+.show_case h2 {
   font-size: 2vw;
   font-family: "Plain";
   font-weight: 400;
   padding: 2.5vw 0;
 }
-.title_div{
+.title_div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2vw 0;
+  padding: 2vw 0;
   border-bottom: 1px solid #fff;
 }
-.title_div h4,h3{
+.title_div h4,
+h3 {
   font-size: 0.8vw;
   font-family: "Plain";
   font-weight: 400;
 }
-.title_div h4{
+.title_div h4 {
   width: 60%;
+}
+.page_3_circle {
+  height: 22vw;
+  width: 22vw;
+  border: 1px solid #fff;
+  margin-top: 70vh;
+  margin-left: 9vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.page_3_circle svg {
+  height: 10svw;
+  width: 5vw;
+}
+.page_3_circle_2 {
+  height: 22vw;
+  width: 22vw;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.page_3_circle_2 svg {
+  height: 10svw;
+  width: 5vw;
+  rotate: -45deg;
+}
+.circle_over{
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all  0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle_over p{
+  font-size: 0.8vw;
+  font-family: "Plain";
+  font-weight: 400;
+  color: black;
+  width: 80%;
+  opacity: 0;
+  transition: all  .5s;
+  transition-delay: 0.4s;
+  text-align: center;
+}
+.page_3_circle:hover .circle_over{
+  
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.page_3_circle:hover .circle_over>p{
+  opacity: 1;
+}
+.page_3_circle_2:hover .circle_over{
+  
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.page_3_circle_2:hover .circle_over>p{
+  opacity: 1;
 }
 .page_4 {
   min-height: 100vh;
@@ -475,6 +556,6 @@ h6 {
   font-weight: 500;
   text-transform: capitalize;
 }
-._canvas_container{
+._canvas_container {
   z-index: 9999999 !important;
 }
