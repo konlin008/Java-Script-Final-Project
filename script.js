@@ -1,3 +1,8 @@
+let container = document.querySelector(".container");
+let crsr = document.querySelector(".crsr");
+let video = document.querySelector(".container video");
+let img = document.querySelector(".container img");
+let play_btn = document.querySelector(".paly_button");
 function locomotive() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -93,24 +98,128 @@ function customCrsr() {
   });
   Shery.makeMagnet(".nav_part_2 h4", {});
 }
-function imageAnimation(){
+function imageAnimation() {
   Shery.imageEffect(".image_div", {
     style: 6,
-    config:{"noiseDetail":{"value":9.92,"range":[0,100]},"distortionAmount":{"value":10,"range":[0,10]},"scale":{"value":35.88,"range":[0,100]},"speed":{"value":0.16,"range":[0,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},"aspect":{"value":0.6979438827672384},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":false},"maskVal":{"value":1,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":false},"onMouse":{"value":0},"noise_speed":{"value":0.99,"range":[0,10]},"metaball":{"value":0.56,"range":[0,2]},"discard_threshold":{"value":0.6,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":9.16,"range":[0,100]}},
+    config: {
+      noiseDetail: { value: 9.92, range: [0, 100] },
+      distortionAmount: { value: 10, range: [0, 10] },
+      scale: { value: 35.88, range: [0, 100] },
+      speed: { value: 0.16, range: [0, 1] },
+      zindex: { value: -9996999, range: [-9999999, 9999999] },
+      aspect: { value: 0.6979438827672384 },
+      ignoreShapeAspect: { value: true },
+      shapePosition: { value: { x: 0, y: 0 } },
+      shapeScale: { value: { x: 0.5, y: 0.5 } },
+      shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+      shapeRadius: { value: 0, range: [0, 2] },
+      currentScroll: { value: 0 },
+      scrollLerp: { value: 0.07 },
+      gooey: { value: true },
+      infiniteGooey: { value: false },
+      growSize: { value: 4, range: [1, 15] },
+      durationOut: { value: 1, range: [0.1, 5] },
+      durationIn: { value: 1.5, range: [0.1, 5] },
+      displaceAmount: { value: 0.5 },
+      masker: { value: false },
+      maskVal: { value: 1, range: [1, 5] },
+      scrollType: { value: 0 },
+      geoVertex: { range: [1, 64], value: 1 },
+      noEffectGooey: { value: false },
+      onMouse: { value: 0 },
+      noise_speed: { value: 0.99, range: [0, 10] },
+      metaball: { value: 0.56, range: [0, 2] },
+      discard_threshold: { value: 0.6, range: [0, 1] },
+      antialias_threshold: { value: 0, range: [0, 0.1] },
+      noise_height: { value: 0.5, range: [0, 2] },
+      noise_scale: { value: 9.16, range: [0, 100] },
+    },
     gooey: true,
   });
   Shery.imageEffect(".max_img_div", {
     style: 6,
-    config: {"noiseDetail":{"value":7.44,"range":[0,100]},"distortionAmount":{"value":2.98,"range":[0,10]},"scale":{"value":36.36,"range":[0,100]},"speed":{"value":0.79,"range":[0,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},"aspect":{"value":0.8375136314067612},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":false},"maskVal":{"value":1.31,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":true},"onMouse":{"value":0},"noise_speed":{"value":0.2,"range":[0,10]},"metaball":{"value":0.4,"range":[0,2]},"discard_threshold":{"value":0.86,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.44,"range":[0,2]},"noise_scale":{"value":12.98,"range":[0,100]}},
+    config: {
+      noiseDetail: { value: 7.44, range: [0, 100] },
+      distortionAmount: { value: 2.98, range: [0, 10] },
+      scale: { value: 36.36, range: [0, 100] },
+      speed: { value: 0.79, range: [0, 1] },
+      zindex: { value: -9996999, range: [-9999999, 9999999] },
+      aspect: { value: 0.8375136314067612 },
+      ignoreShapeAspect: { value: true },
+      shapePosition: { value: { x: 0, y: 0 } },
+      shapeScale: { value: { x: 0.5, y: 0.5 } },
+      shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+      shapeRadius: { value: 0, range: [0, 2] },
+      currentScroll: { value: 0 },
+      scrollLerp: { value: 0.07 },
+      gooey: { value: true },
+      infiniteGooey: { value: false },
+      growSize: { value: 4, range: [1, 15] },
+      durationOut: { value: 1, range: [0.1, 5] },
+      durationIn: { value: 1.5, range: [0.1, 5] },
+      displaceAmount: { value: 0.5 },
+      masker: { value: false },
+      maskVal: { value: 1.31, range: [1, 5] },
+      scrollType: { value: 0 },
+      geoVertex: { range: [1, 64], value: 1 },
+      noEffectGooey: { value: true },
+      onMouse: { value: 0 },
+      noise_speed: { value: 0.2, range: [0, 10] },
+      metaball: { value: 0.4, range: [0, 2] },
+      discard_threshold: { value: 0.86, range: [0, 1] },
+      antialias_threshold: { value: 0, range: [0, 0.1] },
+      noise_height: { value: 0.44, range: [0, 2] },
+      noise_scale: { value: 12.98, range: [0, 100] },
+    },
     gooey: true,
     // debug:true
   });
-
 }
 
+function paly_btn_anime() {
+  container.addEventListener("mouseenter", function () {
+    crsr.style.display = "none";
+    container.addEventListener("mousemove", function (dets) {
+      gsap.to(".paly_button", {
+        top: dets.y - 295,
+        left: dets.x - 520,
+      });
+    });
+  });
+  container.addEventListener("mouseleave", function () {
+    crsr.style.display = "block";
+    gsap.to(".paly_button", {
+      top: "-15%",
+      left: "85%",
+    });
+  });
+  var flag = 0;
+
+  container.addEventListener("click", function () {
+    if (flag === 0) {
+      video.play();
+      img.style.display = "none";
+      gsap.to(".paly_button", {
+        scale: 0.5,
+      });
+      play_btn.innerHTML = '<i class="ri-pause-line"></i>';
+      flag = 1;
+    } else {
+      video.pause();
+      img.style.display = "initial";
+      gsap.to(".paly_button", {
+        scale: 1,
+      });
+      play_btn.innerHTML = '<i class="ri-play-large-fill"></i>';
+      flag = 0;
+    }
+  });
+}
+function flagAnimation{
+  
+}
 locomotive();
 loadingAnimation();
 customCrsr();
 imageAnimation();
-
-
+paly_btn_anime();
