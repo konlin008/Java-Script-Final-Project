@@ -215,7 +215,27 @@ function paly_btn_anime() {
     }
   });
 }
-function flagAnimation{
+function flagAnimation(){
+  document.addEventListener("mousemove",function(dets){
+    gsap.to("#flag",{
+      x:dets.x,
+      y:dets.y,
+      duration: 1
+    })
+    document.querySelectorAll(".hero_3 h1").forEach(h1 => {
+      h1.addEventListener("mouseenter",function(){
+        gsap.to("#flag",{
+          opacity:1,
+        })
+      })
+      h1.addEventListener("mouseleave",function(){
+        gsap.to("#flag",{
+          opacity:0
+        })
+      })
+      
+    });
+  })
   
 }
 locomotive();
@@ -223,3 +243,4 @@ loadingAnimation();
 customCrsr();
 imageAnimation();
 paly_btn_anime();
+flagAnimation();

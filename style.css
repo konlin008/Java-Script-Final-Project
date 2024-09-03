@@ -156,6 +156,14 @@ h6 {
   font-weight: 500;
   position: relative;
 }
+.hero_3{
+  z-index: 999;
+
+}
+.hero_3 h1{
+  border-bottom: 0.5vw solid #fff;
+  margin-right: 1.5vw;
+}
 .hero_3 h1:hover {
   -webkit-text-stroke: 1px #fff;
   color: transparent;
@@ -166,6 +174,9 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
 }
 .page_2 {
   height: 100vh;
