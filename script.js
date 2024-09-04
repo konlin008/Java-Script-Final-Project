@@ -238,9 +238,64 @@ function flagAnimation(){
   })
   
 }
+const footerHead = document.querySelector(".footer_head");
+let footerIsAnimating = false;
+function footerTextAnimation() {
+  footerHead.addEventListener("mouseenter", () => {
+    if (!footerIsAnimating) {
+      footerIsAnimating = true;
+      gsap.fromTo(
+        ".footer h1",
+        { opacity: 0 },
+        {
+          opacity: 1,
+          delay: 0.5,
+          duration: 0.5,
+          onStart: function () {
+            $(".footer h1").css({
+              "font-family": "Silk Serif",
+            });
+            $(".footer h1").textillate({ in: { effect: "fadeIn" } });
+            $(".footer h1").textillate("in");
+          },
+          onComplete: function () {
+            footerIsAnimating = false; // Reset flag when animation completes
+          }
+        }
+      );
+    }
+  });
+
+  footerHead.addEventListener("mouseleave", () => {
+    if (!footerIsAnimating) {
+      footerIsAnimating = true;
+      gsap.fromTo(
+        ".footer h1",
+        { opacity: 0 },
+        {
+          opacity: 1,
+          delay: 0.5,
+          duration: 1,
+          onStart: function () {
+            $(".footer h1").css({
+              "font-family": "Plain",
+            });
+            $(".footer h1").textillate({ in: { effect: "fadeIn" } });
+            $(".footer h1").textillate("in");
+          },
+          onComplete: function () {
+            footerIsAnimating = false; // Reset flag when animation completes
+          }
+        }
+      );
+    }
+  });
+}
+
 locomotive();
 loadingAnimation();
 customCrsr();
 imageAnimation();
 paly_btn_anime();
 flagAnimation();
+footerTextAnimation();
