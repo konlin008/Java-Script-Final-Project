@@ -64,7 +64,7 @@ function loadingAnimation() {
   });
   tl.to("#loader", {
     opacity: 0,
-    delay: 3.5,
+    delay: 3.5,   
     duration: 0.5,
   });
   tl.from(".page_1", {

@@ -8,10 +8,10 @@ html,
 body {
   min-height: 100vh;
   width: 100%;
-  background-color: #000;
+  background-color: #151515;
+  overflow-x: hidden;
 }
 body {
-  overflow-x: hidden;
   cursor: none;
 }
 .crsr {
@@ -101,8 +101,8 @@ h6 {
 
 #main {
   position: relative;
-  background-color: black;
-  overflow-x: hidden  ;
+  background-color: #151515;
+  overflow-x: hidden;
 }
 .page_1 {
   height: 100vh;
@@ -112,6 +112,7 @@ h6 {
 }
 
 .nav {
+  width: 100%;
   padding: 2.5vw 4vw;
   display: flex;
   align-items: center;
@@ -239,13 +240,13 @@ h6 {
   margin-left: 28vw;
 }
 .page_3 h1::before {
-  content: "03";
+  content: "02";
   font-size: 3.3vw;
   font-weight: 400;
   position: absolute;
   font-family: "Silk Serif";
   left: -10%;
-  top: 10%;
+  top: 30%;
 }
 #iamge_div_container {
   width: 100%;
@@ -585,55 +586,253 @@ h3 {
 ._canvas_container {
   z-index: 9999999 !important;
 }
-
 @media (max-width: 600px) {
   .page_1 {
     height: 100vh;
-    padding: 0.1px 0;
+    width: 100%;
+    background-color: #151515;
     position: relative;
   }
+  /* #151515 */
   .nav {
-    padding: 2.5vw 4vw;
-    display: flex;
-    align-items: center;
+    padding: 4vw 4vw;
     justify-content: flex-end;
-    position: fixed;
   }
   .nav_part_2 {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
     display: none;
   }
-  .nav_part_2 h4 {
-    font-family: "Plain";
-    text-transform: capitalize;
-    font-size: 0.9vw;
-    font-weight: 300;
-  }
   .site_info {
-    padding: 35vh 5vw;
+    padding: 30vh 5vw;
   }
-
   .hero_1 ::before {
     font-size: 5vw;
     left: 0%;
-    top: -90%;
+    top: -85%;
   }
   .hero h1,
   .hero h2 {
-    font-size: 10vw;
-    line-height: 10.5vw;
-  }
-  .hero_3 {
-    z-index: 999;
+    font-size: 9vw;
+    line-height: 9vw;
   }
   .hero_3 h1 {
-    border-bottom: 0.6vw solid #fff;
-    margin-right: 1.5vw;
+    border-bottom: 0.7vw solid #fff;
   }
   .hero_3 h1:hover {
     -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
   }
 
+  #flag {
+    width: 20vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .page_2 {
+    height: fit-content;
+    width: 100%;
+    padding: 8vw 0vw;
+  }
+  .page_2 .container {
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+  }
+  .paly_button {
+    height: 15vw;
+    width: 15vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .paly_button i {
+    font-size: 3.5vw;
+  }
+  .page_3 {
+    padding: 5vh 5vw;
+    padding-bottom: 0;
+  }
+  .page_3 h1 {
+    font-size: 9vw;
+  }
+  .page_3_header_div {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .page_3 h1::before {
+    font-size: 5vw;
+    left: 0%;
+    top: -85%;
+  }
+  .underline {
+    width: 100%;
+    height: 0.1vw;
+    background-color: #fff;
+    margin: 2vh 0;
+  }
+  #iamge_div_container {
+    display: block;
+    padding: 0;
+    width: 100;
+  }
+  .image_div {
+    height: 50vh;
+    width: 100%;
+  }
+  .max_img_div {
+    height: 50vh;
+    width: 100%;
+  }
+  .show_case h2 {
+    font-size: 5vw;
+    padding: 5vw 0;
+  }
+  .title_div {
+    padding: 5vw 0;
+  }
+  .title_div h4,
+  h3 {
+    font-size: 3vw;
+  }
+  .page_3_circle {
+    display: none;
+  }
+  .page_3_circle svg {
+    height: 10svw;
+    width: 5vw;
+  }
+  .page_3_circle_2 {
+    display: none;
+  }
+  .page_4 {
+    padding: 8vh 5vw;
+    padding-bottom: 0;
+  }
+  .brand_about {
+    width: 100%;
+    margin-left: 0;
+  }
+  .brand_about h1 {
+    font-size: 9vw;
+  }
+  .brand_about h1::before {
+    font-size: 5vw;
+    left: 0%;
+    top: -85%;
+  }
+  .brand_about > p {
+    font-size: 5vw;
+    width: 90%;
+    margin-top: 4.5vh;
+  }
+  .brand_about .extend {
+    width: 100%;
+    display: block;
+    margin-top: 0;
+  }
+  .extend img {
+    width: 100%;
+    margin: 2vh 0;
+  }
+  .extend p {
+    width: 90%;
+    font-size: 3.5vw;
+  }
+  .about_awards {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh 5vw;
+    padding-bottom: 5vh;
+    bottom: 0;
+    right: 0;
+    margin-top: 3.5vh;
+    margin-bottom: 6vh;
+  }
+  .award {
+    border-bottom: 1px solid #fff;
+    padding: 3vh 0;
+  }
+  .award h4 {
+    font-size: 3.5vw;
+    font-weight: 500;
+  }
+  .award p {
+    font-size: 2.5vw;
+  }
+  .brand_about > h5 {
+    font-size: 3vw;
+  }
+  .page_5 {
+    min-height: 40vh;
+    padding: 5vh 0;
+  }
+  .page_5 .elm h1 {
+    font-size: 5vh;
+    -webkit-text-stroke:1px #fff;
+  }
+  .page_5 .elm2 h1 {
+    font-size: 5vh;
+    -webkit-text-stroke:1px #fff;
+  }
+  .footer {
+    min-height: 70vh;
+    padding: 5vh 5vw;
+  }
+  .footer_head {
+    background-color: red;
+    height: 5vh;
+  }
+  .footer h1 {
+    font-size: 9vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Plain";
+    position: relative;
+  }
+  .footer h1::before {
+    font-size: 5vw;
+    left: 0%;
+    top: -85%;
+  }
+  .footer i {
+    font-size: 10vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Plain";
+    color: transparent;
+    -webkit-text-stroke: 0.3px #fff;
+  }
+  .footer .underline {
+    width: 100%;
+    margin: 3vh 0;
+  }
+  .contact_info {
+    width: 100%;
+    flex-direction: column;
+    gap: 10vw;
+    padding-right: 0;
+  }
+  .contact_info h6 {
+    font-size: 4vw;
+    font-weight: 400;
+    margin: 2.5vh 0;
+  }
+  .contact_info h5 {
+    width: 80%;
+    font-size: 5vw;
+    font-weight: 400;
+  }
+  .footer > h5 {
+    font-family: "Plain";
+    font-size: 3.5vw;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  ._canvas_container {
+    z-index: 9999999 !important;
+  }
 }
