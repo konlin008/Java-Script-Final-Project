@@ -46,7 +46,6 @@ function loadingAnimation() {
   tl.from(".txt h1,.txt h2 ", {
     y: 150,
     stagger: 0.25,
-    opacity: 0,
     duration: 0.5,
     delay: 0.5,
   });
